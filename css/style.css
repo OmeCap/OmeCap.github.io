@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* main page styling */
+header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link {
+    color: royalblue;
+    text-decoration: none;
+}
+.link:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 440px auto;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+/* game elements styling */
+#game-div,
+#blockly-editor,
+#blockly-div {
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+#game-div>svg {
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+    position: absolute;
+    top: 60px;
+}
+
+.title {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 130%;
+
+    line-height: 60px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.title>div{
+    width: 420px;
+}
+
+#capacity {
+    display: none;
+    color: #fff;
+    padding: 5px 1em;
+    border-radius: 15px;
+    background-color: rgba(64, 64, 64, 0.7);
+    font-size: large;
+    top: 420px;
+    left: 30px;
+    position: absolute;
+}
+
+#capacityNumber {
+    font-weight: bold;
+}
+
+#coinNumber {
+    display: block;
+    color: #fff;
+    padding: 5px 1em;
+    border-radius: 15px;
+    background-color: rgba(64, 64, 64, 0.7);
+    font-size: large;
+    top: 70px;
+    left: 320px;
+    position: absolute;
+}
+
+.title>a {
+    text-decoration: none;
+}
+
+.switch_span {
+    font-family: sans-serif;
+    font-weight: normal;
+
+    line-height: 60px;
+    padding: 20px;
+    font-size: 100%;
+    padding: 15px;
+    padding-left: 0;
+
+
+    color: rgb(24, 22, 22);
+}
+
+hr {
+    width: 65%;
+    height: 1px;
+    margin: 0 20%;
+    background-color: black;
+    opacity: 0.4;
+    border: 0 none;
+}
+
+
+/* buttons */
+.buttons {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-around;
+    justify-content: space-around;
+    height: 130px;
+    position: absolute;
+    top: 500px;
+    left: 95px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button.level {
+    width: 45px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    font-size: 11px;
+}
+
+.button:hover {
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.green:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+
+.blue:hover {
+    background-color: #1e90ff;
+    box-shadow: 0px 15px 20px rgba(49, 195, 255, 0.4);
+}
+
+.violet:hover {
+    background-color: #8f00ff;
+    box-shadow: 0px 15px 20px rgba(133, 94, 223, 0.4);
+}
+
+.active, .button:hover {
+    background-color: #aaa;
+    color: white;
+}

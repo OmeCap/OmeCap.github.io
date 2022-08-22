@@ -1,0 +1,55 @@
+.header {
+    padding: 40px;
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.gameLogo {
+    display: block;
+    margin-block-start: 8em;
+    margin-block-end: 3em;
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 100%;
+}
+
+.smallText {
+    display: block;
+    margin-block-start: 0.3em; 
+    margin-block-end: 0.3em; 
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: smaller;
+    color:dimgrey;
+}
+
+.start-button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.start-button:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+.start-button:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
