@@ -71,7 +71,7 @@ Blockly.Gamepad.init({
             statements: ['DO'],
             template: Blockly.Gamepad['TEMPLATES']['WHILE'],
             json: {
-                'message0': 'Repeat until %1 %2 do %3',
+                'message0': 'repeat until %1 %2 do %3',
                 'args0': [{
                     'type': 'field_image',
                     'src': 'images/destination.png',
