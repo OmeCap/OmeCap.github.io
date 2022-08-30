@@ -145,6 +145,13 @@
     },
     {
         id: 5,
+        blocks: [
+            'move',
+            'turn',
+            'repeat_until',
+            'if_path',
+            'if_else_path'
+        ],
         maxBlocks: 10,
         game: {
             car: {
